@@ -1,0 +1,408 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: rgb(249, 249, 249);
+    font-family: cursive, 'Courier New', Courier, monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    height:300vh;
+    overflow-x: hidden;
+}
+
+/*sticky header*/
+
+header{
+    background: rgb(242, 242, 242);
+    padding:35px;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: rgb(242, 242, 242);
+    z-index: 20;
+}
+
+.sticky + .content {
+    padding-top:176.5px;
+}
+
+/*sticky footer*/
+
+footer{
+    background: rgb(242, 242, 242);
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:20;
+    border-top:1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*head*/
+
+#moto{
+float: right;
+margin-right:5px;
+}
+
+.logo{
+    float: left;
+}
+
+/*nav*/
+
+nav{
+    text-align:center;
+    background:rgb(233, 233, 233);
+    position:stick;
+    top:0;
+    z-index:10;
+}
+
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left:75px;
+    padding:23px 23px 23px 23px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: 2px solid black;
+}
+
+
+/* all of the underlines */
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 2px;
+    position: absolute;
+}
+.nav_content{
+    outline-offset: 10px;
+    }
+
+/* home*/
+
+#home{
+   color:blue;
+}
+
+nav #home:hover:not(.active){
+    color:green;
+    border-bottom:2px solid red;
+}
+
+
+
+/* about*/
+
+#about{
+    color:rgb(209, 122, 15);
+}
+
+nav #about:hover:not(.active){
+    color:rgb(231, 95, 163);
+    border-bottom:2px solid green;
+}
+
+/* shop*/
+
+#shop{
+    color:darkviolet;
+}
+
+nav #shop:hover:not(.active){
+    color:rgb(197, 9, 81);
+    border-bottom:2px solid rgb(6, 173, 224);
+}
+
+/* contact*/
+
+#contact{
+    color:green;
+}
+
+nav #contact:hover:not(.active){
+    color:red;
+    border-bottom:2px solid rgb(212, 200, 32);
+}
+
+.confetti{
+    content:"";
+    width:100%;
+    height:750vh;
+    z-index:-2;
+    top:0;
+    position: absolute;
+}
+
+
+/*video*/
+video{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*about the course*/
+
+.about{
+    height:600vh;
+    display:flex;
+    margin:0px !important;
+    background-color:rgba(255, 255, 255, 0.144);
+}
+
+.about-title{
+    width:50%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    background: transparent;
+    border:solid rgb(211, 211, 211) 10px;
+}
+
+#about-logo-image{
+    background: transparent;
+}
+
+
+.about-pages{
+    width:50%;
+}
+.about-pages div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+.about-pages div> p{
+    width:80%;
+    font-size:18px;
+    line-height:30px;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.705);
+    color:white;
+}
+
+table {
+    width:48% !important;
+    border:10px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  table#t01 th {
+    background-color: black;
+    color: white;
+  }
+  .prices{
+      width:100%;
+      color:white;
+      background-color:rgba(0, 0, 0, 0.705);
+  }
+  
+h2{
+    font-size:4em;
+}
+
+.about-pages div:nth-child(1){
+    background-image: url("images/birdies/place/course/holeone.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-color: yellow;
+    border:10px solid yellow;
+}
+.about-pages div:nth-child(2){
+    background-image: url("images/birdies/place/course/holetwo.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-color:  rgb(72, 255, 0);
+    border:10px solid  rgb(72, 255, 0);
+}
+.about-pages div:nth-child(3){
+    background-image: url("images/birdies/place/course/holethree.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-color: rgb(234, 0, 255);
+    border:10px solid rgb(234, 0, 255);
+}
+.about-pages div:nth-child(4){
+    background-image: url("images/birdies/place/course/holefour.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-color: rgb(255, 0, 128);
+    border:10px solid rgb(255, 0, 128);
+}
+.about-pages div:nth-child(5){
+    background-image: url("images/birdies/place/course/holefive.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-color: rgb(255, 123, 0);
+    border:10px solid rgb(255, 123, 0);
+}
+.about-pages div:nth-child(6){
+    background-image: url("images/birdies/place/course/holesix.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:90vh;
+    background-color: rgb(5, 205, 255);
+    border:10px solid rgb(5, 205, 255);
+}
+
+
+/*Booking & golf-ball animation*/
+
+
+.animation{
+    position:relative;
+    overflow:hidden;
+    height:100vh;
+    bottom:20%;
+    background: linear-gradient(transparent,rgba(255, 255, 255, 0));
+}
+.grass{
+    position: absolute;
+    overflow: hidden;
+    width: 150%;
+    height:50vh;
+    left:-30%;
+    z-index: -1;
+    top:754vh;
+}
+.golfball{
+    height:100px;
+    position:absolute;
+    left:-10%;
+    top:45%;
+}
+.button{
+    top:730vh;
+}
+
+
+
+
+/*log in to register*/
+.loginbox{
+    width: 520px;
+    height:620px;
+    background:rgba(7, 7, 7, 0.959);
+    opacity: 0.8;
+    color:#ffc107;
+    top:745vh;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+h3{
+    margin:70px;
+    padding: -650px 100px 0px;
+    text-align: center;
+    font-size: 40px;
+    color:#ffc107;
+}
+
+.loginbox p{
+    margin:25px;
+    padding:0px;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:20px
+}
+
+.loginbox imput{
+    width:300%;
+    margin-left:50px;
+    margin-right:0px;
+    margin-bottom:0px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    margin-top:-50;
+    margin-left:145px;
+    width:320px;
+    border:2px solid #ffc107;
+    background:rgba(255, 255, 255, 0.959);
+    outline:none;
+    height:40px;
+    color:#000000;
+    font-size: 16px;
+}
+
+#rd{
+    margin-top: 40px;
+    margin-left:80px;
+}
+
+#submit{
+ margin-left:45%;
+ margin-right:55%;
+ padding:5px;
+ font-size:20px;
+ margin-bottom:20px;
+ margin-top:40px;
+ text-align:center;
+
+}
+
+#login {
+margin-left:28%;
+margin-top:40px;
+color:#ffc107;
+padding:5px;
+}
+
+#forgotten {
+color:#ffc107;
+padding:5px;
+}
+
+#homie {
+    color: #ffc107;
+    padding:5px;
+}
+
